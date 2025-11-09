@@ -57,7 +57,7 @@ router.get('/', async (req, res) => {
 
                     let Mbuvi_MD_TEXT = `
 ╔════════════════════◇
-║『 You've chosen Trashcore Bots』
+║『 thanks for choosing my Bots』
 ║ -Set the session ID in Heroku and even panels:
 ║ - SESSION_ID: 
 
