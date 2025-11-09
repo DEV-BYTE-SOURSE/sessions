@@ -1,6 +1,6 @@
 {
-    "description": "VolTah-session",
-    "main": "./index.js",
+    "description"dave-session",
+    "main": "./voltah.js",
   "engines" : { 
     "npm" : ">=9.7.2",
     "node" : ">=20.0.0"
@@ -8,7 +8,7 @@
     "scripts": {
     "start": "node index.js"
   },
-  "author": "Giddy Tennor",
+  "author": "dave",
   "license": "GPL-3.0 license",
   "dependencies": {
     "baileys-pro": "latest",
