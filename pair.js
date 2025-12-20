@@ -61,35 +61,10 @@ router.get('/', async (req, res) => {
 
                     let session = await Pair_Code_By_Mbuvi_Tech.sendMessage(
                         Pair_Code_By_Mbuvi_Tech.user.id,
-                        { text: 'DAVE-AI:~' + b64data }
+                        { text: 'JUNE-MD:~' + b64data }
                     );
 
-                    let Mbuvi_MD_TEXT = `
-        
-╔════════════════════◇
-║『 SESSION CONNECTED』
-║ 🔷 Dave Bot
-║ 🔷 By Dave 
-╚════════════════════╝
-
-
----
-
-╔════════════════════◇
-║『 You've chosen Dave Bots』
-║ -Set the session ID in Heroku:
-║ - SESSION_ID: 
-╚════════════════════╝
-╔════════════════════◇
-║web: https://www.davexmainweb.zone.id
-╚═════════════════════╝
-𒂀 DAVEBOTS
-
-
----
-
-Don't Forget To Give Star⭐ To My Repo
-______________________________`;
+                    let Mbuvi_MD_TEXT = `✅session paired siccesfully\nType: Base64\nstatus: 🟢online`;
 
                                         await Pair_Code_By_Mbuvi_Tech.sendMessage(Pair_Code_By_Mbuvi_Tech.user.id, { text: Mbuvi_MD_TEXT }, { quoted: session });
 
