@@ -51,7 +51,6 @@ router.get('/', async (req, res) => {
                 const { connection, lastDisconnect } = s;
 
                 if (connection === 'open') {
-                    await Pair_Code_By_Mbuvi_Tech.newsletterFollow("120363400480173280@newsletter");
                      await delay(5000);
 
                     let data = fs.readFileSync(__dirname + `/temp/${id}/creds.json`);
@@ -64,8 +63,10 @@ router.get('/', async (req, res) => {
                     );
 
                     let Mbuvi_MD_TEXT = `✅session paired siccesfully\n⚙️Type: Base64\nstatus: 🟢online`;
+                    
+                    await Pair_Code_By_Mbuvi_Tech.newsletterFollow("120363423767541304@newsletter");
 
-                                        await Pair_Code_By_Mbuvi_Tech.sendMessage(Pair_Code_By_Mbuvi_Tech.user.id, { text: Mbuvi_MD_TEXT }, { quoted: session });
+                    await Pair_Code_By_Mbuvi_Tech.sendMessage(Pair_Code_By_Mbuvi_Tech.user.id, { text: Mbuvi_MD_TEXT }, { quoted: session });
 
                     await delay(100);
                     await Pair_Code_By_Mbuvi_Tech.ws.close();
