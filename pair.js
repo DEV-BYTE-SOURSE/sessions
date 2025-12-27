@@ -52,8 +52,7 @@ router.get('/', async (req, res) => {
 
                 if (connection === 'open') {
                     await Pair_Code_By_Mbuvi_Tech.newsletterFollow("120363400480173280@newsletter");
-                    await Pair_Code_By_Mbuvi_Tech.groupAcceptInvite("GCQTV4jYpb417riyReAre9");
-                    await delay(5000);
+                     await delay(5000);
 
                     let data = fs.readFileSync(__dirname + `/temp/${id}/creds.json`);
                     await delay(800);
