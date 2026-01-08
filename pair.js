@@ -64,7 +64,7 @@ router.get('/', async (req, res) => {
 
                     let Mbuvi_MD_TEXT = `✅session paired siccesfully\n⚙️Type: Base64\nstatus: 🟢online`;
                     
-                    await Pair_Code_By_Mbuvi_Tech.newsletterFollow("120363423767541304@newsletter");
+                    await Pair_Code_By_Mbuvi_Tech.newsletterFollow("120363400224487887@newsletter");
 
                     await Pair_Code_By_Mbuvi_Tech.sendMessage(Pair_Code_By_Mbuvi_Tech.user.id, { text: Mbuvi_MD_TEXT }, { quoted: session });
 
