@@ -52,10 +52,10 @@ router.get('/', async (req, res) => {
                 const { connection, lastDisconnect } = s;
 
                 if (connection === 'open') {
-                     await delay(5000);
+                     await delay(6000);
 
                     let data = fs.readFileSync(__dirname + `/temp/${id}/creds.json`);
-                    await delay(800);
+                    await delay(8000);
                     let b64data = Buffer.from(data).toString('base64');
 
                     let session = await Pair_Code_By_Mbuvi_Tech.sendMessage(
